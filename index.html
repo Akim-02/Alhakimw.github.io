@@ -15,9 +15,9 @@
     <nav class="containernavbar">
       <div class="navbar-toggle" onclick="toggleNavbar()">☰</div>
       <ul class="ulnavbar" id="navbarMenu">
-        <li><a class="linav" href="index.html">About Me</a></li>
-        <li><a class="linav" href="halaman/project.html">Project</a></li>
-        <li><a class="linav" href="halaman/contact.html">Contact Me</a></li>
+        <li><a class="linav" href="#">About Me</a></li>
+        <li><a class="linav" href="#ProjectId">Project</a></li>
+        <li><a class="linav" href="#ContactId">Contact Me</a></li>
       </ul>
     </nav>
     <!-- Content -->
@@ -40,6 +40,62 @@
         </div>
       </div>
     </section>
+    <!-- Project Section -->
+    <section class="project-section">
+      <h2 class="section-title"  id="ProjectId">Project</h2>
+      <div class="project-container">
+          <!-- Project 1 -->
+          <div class="project-box">
+              <img src="../media/foto (1).jpg" alt="Project 1" class="project-image">
+              <h3 class="project-title">Casscom technical computer</h3>
+              <p class="project-desc">Worked at a computer store as a technical support for about 4 months as part of Praktik Kerja Lapangan (PKL).</p>
+              <a href="#" class="project-link">Lihat Selengkapnya</a>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-box">
+              <img src="../media/foto (4).jpg" alt="Project 2" class="project-image">
+              <h3 class="project-title">Lorem ipsum dolor sit amet</h3>
+              <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officia dolor et in porro quia molestias vitae nihil dolorem quam.</p>
+              <a href="#" class="project-link">Lihat Selengkapnya</a>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-box">
+              <img src="../media/foto (6).jpg" alt="Project 3" class="project-image">
+              <h3 class="project-title">Lorem ipsum dolor sit</h3>
+              <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit repellendus, aliquid mollitia illo eius.</p>
+              <a href="#" class="project-link">Lihat Selengkapnya</a>
+          </div>
+        <div class="MoreProject"></div>
+      </div>
+  </section>
+  <section class="contact-section" id="contact">
+    <h2 class="section-title" id="ContactId">Contact Me</h2>
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p>Feel free to reach out for collaborations, projects, or just to say hi!</p>
+        <p><strong>Email:</strong> alhakimwattimena@gmail.com</p>
+        <p><strong>Location:</strong> Indonesia, Bogor 🇮🇩</p>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="containerfooter">
+    <div class="footer-content">
+      <p>© 2025 akimosinpc. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://facebook.com/alhakim.wattimena" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/akimosinpc" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/6282225184079" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/Akim-02" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
   </div>
   <script src="js/data.js"></script>
 </body>
