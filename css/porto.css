@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth; 
 }
 
 body {
@@ -15,12 +16,11 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 /* === Navbar Styling === */
 .containernavbar {
-    background-color: #3b1c25;
+    background: rgba(59, 28, 37, 0.7);
     padding: 15px 30px;
     display: flex;
     justify-content: center;
@@ -29,26 +29,18 @@ body {
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    background: rgba(59, 28, 37, 0.7);
-
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-
     -webkit-backdrop-filter: blur(10px);
-
 }
 
 .ulnavbar {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 35px;
 }
 
 .linav {
-    color: #fff0e6;
+    color: white;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
@@ -70,11 +62,6 @@ body {
 
 .linav:hover::after {
     width: 100%;
-}
-
-.linav:hover {
-    background-color: transparent;
-    border-radius: 0;
 }
 
 .navbar-toggle {
@@ -118,17 +105,15 @@ body {
 /* === About Section === */
 .about-highlight-section {
     display: flex;
-    height: 100vh;
-    background: linear-gradient(to left, rgba(30, 15, 21, 0.8) 30%, rgba(30, 15, 21, 1) 70%),
-        url('../media/prestasi.jpg') no-repeat right center;
-    background-size: cover;
     align-items: center;
-    padding: 0 10%;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
     padding: 60px 20px;
     color: white;
+    height: 100vh;
+    background: 
+        linear-gradient(to bottom, rgba(30, 15, 21, 0.8) 0%, rgba(30, 15, 21, 0.7) 50%, rgba(30, 15, 21, 0.8) 100%),
+        url('../media/prestasi.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 .about-container {
@@ -156,14 +141,14 @@ body {
 
 .about-text h2 {
     font-size: 2rem;
-    color: #e7c6b6;
+    color: white;
     margin-bottom: 20px;
 }
 
 .about-text p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #e7c6b6;
+    color: white;
     margin-bottom: 15px;
 }
 
@@ -181,15 +166,17 @@ body {
 /* === Project Section === */
 .project-section {
     padding: 40px 20px;
-    background-color: #3b1c25;
+    background: 
+        linear-gradient(to bottom, rgba(30, 15, 21, 0.8) 0%, rgba(30, 15, 21, 0.8) 50%, rgba(30, 15, 21, 1) 100%),
+        url("../media/foto (2).jpg") no-repeat center center fixed;
+    background-size: cover;
     text-align: center;
     flex: 1;
     height: 100vh;
-    background: linear-gradient(to left, rgba(30, 15, 21, 0.8) 30%, rgba(30, 15, 21, 1) 70%),
-        url('foto\ \(3\).jpg') no-repeat right center;
-    background-size: cover;
-    align-items: center;
-    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: scroll;
 }
 
 .section-title {
@@ -249,14 +236,11 @@ body {
     border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease;
-
-
 }
 
 .project-link:hover {
     background-color: #3b1c25;
     color: #fff0e6;
-
 }
 
 /* === Footer === */
@@ -335,7 +319,7 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition:0.3s ease;
 }
 
 .contact-form button:hover {
