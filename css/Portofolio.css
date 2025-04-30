@@ -1,0 +1,61 @@
+/* Font umum */
+body {
+  font-family: 'Cascadia Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background: #0b0c10;
+  overflow: hidden;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+.container-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+/* navbar menu */
+.navbar-menu {
+  background-color: rgba(31, 40, 51, 0.8);
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ul-navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.li-nav a {
+  color: #FBFBFB;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.li-nav a:hover {
+  color: #66fcf1;
+}
+
+/* Konten */
+.section-content {
+  flex: 1;
+  padding: 40px;
+  background-color: rgba(11, 12, 16, 0.85);
+}
+
+/* Footer */
+.container-fotter {
+  background-color: rgba(31, 40, 51, 0.8);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+}
