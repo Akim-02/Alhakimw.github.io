@@ -8,6 +8,7 @@ body {
   height: 100vh;
   color: white;
   position: relative;
+  box-sizing: border-box;
 }
 .container-body {
   display: flex;
