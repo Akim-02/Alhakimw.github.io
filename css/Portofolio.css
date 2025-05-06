@@ -1,4 +1,3 @@
-/* Font umum */
 body {
   font-family: 'Cascadia Mono', monospace;
   margin: 0;
@@ -21,7 +20,7 @@ body {
 .navbar-menu {
   background-color: rgba(31, 40, 51, 0.8);
   padding: 15px 30px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   display: flex;
 }
@@ -30,8 +29,41 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
   gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+@media (max-width: 500px) {
+  .ul-navbar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(31, 40, 51, 0.95);
+    padding: 20px 0;
+    gap: 20px;
+  }
+  .ul-navbar.active {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .navbar-center {
+    justify-content: flex-end; 
+  }
 }
 
 .li-nav a {
@@ -46,12 +78,26 @@ body {
 }
 
 /* Konten */
-.section-content {
+.container-content {
   flex: 1;
   padding: 40px;
   background-color: rgba(11, 12, 16, 0.85);
 }
-
+.section-about{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.section-project{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.section-keahlian{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 /* Footer */
 .container-fotter {
   background-color: rgba(31, 40, 51, 0.8);

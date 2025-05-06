@@ -1,5 +1,7 @@
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakim || Portofolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,29 +12,61 @@
   <div class="container-body">
     <!-- container navbar -->
     <section class="navbar-menu">
-      <nav class="">
+      <div class="icon">Hakim</div>
+      <div class="navbar">
       <ul class="ul-navbar">
-        <li class="li-nav"><a href="#">Home</a></li>
-        <li class="li-nav"><a href="href-to-about">About</a></li>
-        <li class="li-nav"><a href="href-to-Project">Project</a></li>
+        <li class="li-nav"><a href="#">Home</a></li> 
+        <li class="li-nav"><a href="#section-about">About</a></li>
+        <li class="li-nav"><a href="#section-project">Project</a></li>
       </ul>
-      </nav>
+      </div>
+      <div class="navbar-right">
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+      </div>      
     </section>
     <!-- container navbar end -->
     <!-- container content -->
-    <section class="section-content">
+   <div class="container-content">
+    <section class="section-about">
       <div>
+        <div class="about-image">
+          <img src="" alt="Foto Profil" />
+        </div>
+        <div class="about-text">
+          <h2 class="ceki">About Me</h2>
+          <p>
+            Hi hi hii! My name is Al-Hakim Wattimena you can call me Akim. I'm interested in modern web development.
+            I enjoy creating websites that are interactive, responsive, and visually appealing.
+            Right now, I'm learning and improving my programming skills.
+          </p>
+          <p>
+            I also enjoy collaborating on projects, trying out new technologies, and constantly learning new things in
+            the world of tech.
+          </p>
+        </div>
+
       </div>
     </section>
+    <section class="section-keahlian">
+      <div>
+        <h3></h3>  <!-- keahlian -->
+      </div>
+    </section>
+    <section class="section-project">
+      <div>
+        Project <!-- Project -->
+      </div>
+    </section>
+  </div>
     <!-- container content end -->
     <!-- container fotter -->
      <section class="container-fotter">
       <footer class="sectionfotter">
         <p>© 2025 akimosinpc. All rights reserved.</p>
-
       </footer>
      </section>
      <!-- container fotter end -->
   </div>
+  <script src="../js/server.js"></script>
   </body>
 </html>
