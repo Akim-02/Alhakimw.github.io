@@ -89,11 +89,24 @@ body {
   padding: 40px;
   background-color: rgba(11, 12, 16, 0.85);
 }
-
+.about-image img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #dac8c8;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 .section-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-text{
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+
 }
 
 .section-project {
