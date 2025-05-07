@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 .container-body {
   display: flex;
   flex-direction: column;
@@ -17,6 +18,7 @@ body {
   position: relative;
   z-index: 1;
 }
+
 /* navbar menu */
 .navbar-menu {
   background-color: rgba(31, 40, 51, 0.8);
@@ -35,12 +37,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .burger-menu {
   display: none;
   font-size: 24px;
   cursor: pointer;
   color: white;
 }
+
 @media (max-width: 500px) {
   .ul-navbar {
     display: none;
@@ -54,6 +58,7 @@ body {
     padding: 20px 0;
     gap: 20px;
   }
+
   .ul-navbar.active {
     display: flex;
   }
@@ -63,7 +68,7 @@ body {
   }
 
   .navbar-center {
-    justify-content: flex-end; 
+    justify-content: flex-end;
   }
 }
 
@@ -84,22 +89,26 @@ body {
   padding: 40px;
   background-color: rgba(11, 12, 16, 0.85);
 }
-.section-about{
+
+.section-about {
   justify-content: center;
   align-items: center;
   display: flex;
 }
-.section-project{
+
+.section-project {
   justify-content: space-evenly;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
 }
-.section-keahlian{
+
+.section-keahlian {
   justify-content: center;
   align-items: center;
   display: flex;
 }
+
 /* Footer */
 .container-footer {
   background-color: rgba(31, 40, 51, 0.8);
