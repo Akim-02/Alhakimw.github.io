@@ -1,33 +1,41 @@
-<!DOCTYPE html>
-<html lang="id">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Al-Hakim || Portofolio</title>
-  <link rel="stylesheet" href="css/porto.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakim || Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/Portofolio.css">
 </head>
 
 <body>
-  <div class="container">
-    <!-- Navbar -->
-    <nav class="containernavbar">
-      <div class="navbar-toggle" onclick="toggleNavbar()">☰</div>
-      <ul class="ulnavbar" id="navbarMenu">
-        <li><a class="linav" href="#">About Me</a></li>
-        <li><a class="linav" href="#ProjectId">Project</a></li>
-        <li><a class="linav" href="#ContactId">Contact Me</a></li>
-      </ul>
-    </nav>
-    <!-- Content -->
-    <section class="about-highlight-section">
-      <div class="about-container">
+  <div id="container-body" class="container-body">
+    <!-- container navbar -->
+    <section id="navbar-menu" class="navbar-menu">
+      <div class="icon">Akim</div>
+      <div class="navbar">
+        <ul class="ul-navbar">
+          <li class="li-nav"><a href="#">Home</a></li>
+          <li class="li-nav"><a href="#section-about">About</a></li>
+          <li class="li-nav"><a href="#section-project">Project</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+      </div>
+    </section>
+    <!-- container navbar end -->
+    <!-- container content -->
+    <div id="container-content" class="container-content">
+      <h2 class="about-me">About Me</h2>
+      <section id="section-about" class="section-about"> <!--about-->
         <div class="about-image">
           <img src="media/profile.jpg" alt="Foto Profil" />
         </div>
         <div class="about-text">
-          <h2 class="ceki">About Me</h2>
           <p>
             Hi hi hii! My name is Al-Hakim Wattimena you can call me Akim. I'm interested in modern web development.
             I enjoy creating websites that are interactive, responsive, and visually appealing.
@@ -38,66 +46,59 @@
             the world of tech.
           </p>
         </div>
-      </div>
-    </section>
-    <!-- Project Section -->
-    <section class="project-section">
-      <h2 class="section-title"  id="ProjectId">Project</h2>
+      </section> <!--about-->
+      <section id="section-pengalaman" class="section-pengalaman"> 
+        <div><h2>Pengalaman</h2></div>
+        <div class="Pengalaman-box">
+        <img src="../media/" alt="Project 1" class="project-image">
+          <h3 class="project-title">Casscom technical computer</h3>
+          <p class="project-desc">Worked at a computer store as a technical support for about 4 months as part of
+            Praktik Kerja Lapangan (PKL).</p>
+          <a href="#" class="project-link">Lihat Selengkapnya</a>
+          </div>
+      </section> 
+    </div>
+    <h2 class="title-project">Project</h2>
+    <section id="section-project" class="section-project"> <!-- Project -->
       <div class="project-container">
-          <!-- Project 1 -->
-          <div class="project-box">
-              <img src="media/foto (1).jpg" alt="Project 1" class="project-image">
-              <h3 class="project-title">Casscom technical computer</h3>
-              <p class="project-desc">Worked at a computer store as a technical support for about 4 months as part of Praktik Kerja Lapangan (PKL).</p>
-              <a href="#" class="project-link">Lihat Selengkapnya</a>
-          </div>
-          <!-- Project 2 -->
-          <div class="project-box">
-              <img src="media/foto (4).jpg" alt="Project 2" class="project-image">
-              <h3 class="project-title">Lorem ipsum dolor sit amet</h3>
-              <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officia dolor et in porro quia molestias vitae nihil dolorem quam.</p>
-              <a href="#" class="project-link">Lihat Selengkapnya</a>
-          </div>
-          <!-- Project 3 -->
-          <div class="project-box">
-              <img src="media/foto (6).jpg" alt="Project 3" class="project-image">
-              <h3 class="project-title">Lorem ipsum dolor sit</h3>
-              <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit repellendus, aliquid mollitia illo eius.</p>
-              <a href="#" class="project-link">Lihat Selengkapnya</a>
-          </div>
+        <!-- Project 1 -->
+        <div class="project-box">
+          <img src="../media/project1.png" alt="Project 1" class="project-image">
+          <h3 class="project-title">Membuat websites porto pribadi</h3>
+          <p class="project-desc">mengimplementasikan apa yang sudah di dapatkan saat belajar di chanel YT maupun AI</p>
+          <a href="#" class="project-link">Lihat Selengkapnya</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-box">
+          <img src="media/foto (2).jpg" alt="Project 2" class="project-image">
+          <h3 class="project-title">Lorem ipsum dolor sit</h3>
+          <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicn porrquia molestias vitae nihil
+            dolorem quam.</p>
+          <a href="#" class="project-link">Lihat Selengkapnya</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-box">
+          <img src="media/foto (3).jpg" alt="Project 3" class="project-image">
+          <h3 class="project-title">Lorem ipsum dolor sit</h3>
+          <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. m odit repellendus, aliquid
+            mollitia illo eius.</p>
+          <a href="#" class="project-link">Lihat Selengkapnya</a>
+        </div>
         <div class="MoreProject"></div>
       </div>
-  </section>
-  <section class="contact-section" id="ContactId">
-    <h2 class="section-title">Contact Me</h2>
-    <div class="contact-container">
-      <form class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="contact-info">
-        <p>Feel free to reach out for collaborations, projects, or just to say hi!</p>
-        <p><strong>Email:</strong> alhakimwattimena@gmail.com</p>
-        <p><strong>Location:</strong> Indonesia, Bogor 🇮🇩</p>
-      </div>
+    </section> <!-- Project -->
+    <!-- container content end -->
+    <!-- container footer -->
+    <div>
+      <section id="container-footer" class="container-footer">
+        <footer class="sectionfotter">
+          <p>© 2025 akimosinpc. All rights reserved.</p>
+        </footer>
+      </section>
+      <!-- container fotter end -->
     </div>
-  </section>
-  <!-- Footer -->
-  <footer class="containerfooter">
-    <div class="footer-content">
-      <p>© 2025 akimosinpc. All rights reserved.</p>
-      <div class="footer-social">
-        <a href="https://facebook.com/alhakim.wattimena" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com/akimosinpc" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/6282225184079" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://github.com/Akim-02" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-  </footer>
   </div>
-  <script src="js/data.js"></script>
+  <script src="js/server.js"></script>
 </body>
 
 </html>
