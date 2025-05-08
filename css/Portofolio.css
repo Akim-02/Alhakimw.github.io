@@ -1,14 +1,19 @@
-body {
-  font-family: 'Cascadia Mono', monospace;
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Cascadia Mono', monospace;
   background: #0b0c10;
   overflow: auto;
   height: 100vh;
   color: white;
   position: relative;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+
+
 }
 
 .container-body {
@@ -103,9 +108,11 @@ body {
   border-radius: 50%;
   border: 5px solid #f7f7f7;
 }
-.about-image img:hover{
- border: 5px solid  rgb(102, 252, 241);
+
+.about-image img:hover {
+  border: 5px solid rgb(102, 252, 241);
 }
+
 .section-about {
   display: flex;
   align-items: center;
@@ -119,11 +126,13 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.title-project{
+
+.title-project {
   justify-content: center;
   align-items: center;
   display: flex;
 }
+
 .section-project {
   align-items: center;
   display: flex;
@@ -133,12 +142,13 @@ body {
 
 .project-container {
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
 .project-box {
-  background-color:  #00000074;
+  background-color: #00000074;
   border-radius: 30px;
   padding: 20px;
   width: 300px;
@@ -147,11 +157,13 @@ body {
   transition: transform 0.3s ease;
   backdrop-filter: blur(1px);
 }
+
 .project-box:hover {
   transform: translateY(-10px);
   box-shadow: 0 5px 5px rgb(102, 252, 241);
 }
-.project-box .project-link{
+
+.project-box .project-link {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
@@ -161,16 +173,18 @@ body {
   border-radius: 5px;
   display: inline-block;
 }
-.project-box .project-link:hover{
+
+.project-box .project-link:hover {
   text-decoration: none;
   color: #101010;
-  background-color:#66fcf1;
+  background-color: #66fcf1;
   margin-top: 10px;
   align-self: flex-end;
   padding: 7px 14px;
   border-radius: 5px;
   display: inline-block;
 }
+
 .project-image {
   width: 100%;
   height: 170px;
@@ -178,6 +192,7 @@ body {
   border-radius: 8px;
   margin-bottom: 15px;
 }
+
 .section-keahlian {
   justify-content: center;
   align-items: center;
