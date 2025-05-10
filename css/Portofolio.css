@@ -158,6 +158,17 @@ body {
   backdrop-filter: blur(1px);
 }
 
+.project-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  flex-grow: 1;
+}
 .project-box:hover {
   transform: translateY(-10px);
   box-shadow: 0 5px 5px rgb(102, 252, 241);
