@@ -12,6 +12,7 @@ body {
   height: 100vh;
   color: white;
   position: relative;
+  padding-top: 60px;
 
 
 }
@@ -31,6 +32,12 @@ body {
   justify-content: space-between;
   align-items: center;
   display: flex;
+  position: fixed;    
+  top: 0;              
+  left: 0;
+  width: 100%;         
+  z-index: 1000;        
+  backdrop-filter: blur(6px); 
 }
 
 .ul-navbar {
@@ -89,6 +96,14 @@ body {
 }
 
 /* Konten */
+.home-section {
+  display: flex;
+  flex-direction: column;
+}
+.home-section .hero-home{
+  width: 100%;
+}
+
 .container-content {
   flex: 1;
   padding: 40px;
@@ -131,6 +146,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-bottom: 20px;
 }
 
 .section-project {
@@ -169,6 +185,7 @@ body {
   color: #ffffff;
   flex-grow: 1;
 }
+
 .project-box:hover {
   transform: translateY(-10px);
   box-shadow: 0 5px 5px rgb(102, 252, 241);
@@ -217,4 +234,5 @@ body {
   text-align: center;
   padding: 10px;
   font-size: 10px;
+  margin-top: 20px;
 }
